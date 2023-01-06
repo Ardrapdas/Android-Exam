@@ -1,0 +1,39 @@
+package com.example.sjcet.myapplication;
+
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.EditText;
+import android.widget.Button;
+import android.widget.Toast;
+import android.content.Intent;
+public class MainActivity extends AppCompatActivity {
+    EditText password, username;
+    Button login, Cancel;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        password = findViewById(R.id.ed1);
+        username = findViewById(R.id.ed2);
+        login = findViewById(R.id.bt1);
+        Cancel = findViewById(R.id.bt2);
+
+        public void Main2Activity(View view){
+            Intent i = new Intent(Main2Activity);
+            if(password == null){
+                Toast.makeText(this, "Invalid password", Toast.LENGTH_SHORT).show();
+            }
+            else {
+                Toast.makeText(this,"login successfully",Toast.LENGTH_SHORT).show();
+            }
+            if(username == null){
+                Toast.makeText(this,"Invalid username",Toast.LENGTH_SHORT).show();
+            }
+            else{
+                Toast.makeText(this,"login successfully",Toast.LENGTH_SHORT).show();
+            }
+        }
+    }
+}
