@@ -1,0 +1,29 @@
+package com.example.sjcet.listview;
+
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Toast;
+import android.widget.EditText;
+import android.widget.ArrayAdapter;
+public class MainActivity extends AppCompatActivity {
+    EditText Melbourne,Vienna,Vancouver,Toranto,Calgery,Adelaide,Perth,Auckland,Helanki,Hamburg,Munich,NewYork;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        Melbourne = findViewById(R.id.ed1);
+        Vienna = findViewById(R.id.ed2);
+        Vancouver = findViewById(R.id.ed3);
+        Toranto = findViewById(R.id.ed4);
+        Calgery = findViewById(R.id.ed5);
+        Adelaide = findViewById(R.id.ed6);
+        Perth = findViewById(R.id.ed7);
+        Auckland = findViewById(R.id.ed8);
+        Helanki = findViewById(R.id.ed9);
+        Hamburg = findViewById(R.id.ed10);
+        Munich = findViewById(R.id.ed11);
+        NewYork = findViewById(R.id.ed12);
+    }
+}
